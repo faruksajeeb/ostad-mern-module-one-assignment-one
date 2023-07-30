@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <label for="">Input Number:</label>
+    <input type="number" id="inputy_number" name="inputy_number"/>
+    <hr>
+    <button onclick="generateMultipicationTable()">Generate Multiply</button>
+    <br>
+       <script>       
+        const generateMultipicationTable = () => {
+            let inputNumber = document.getElementById("inputy_number").value; 
+            console.log("Generate Multiplication Table for: "+inputNumber);
+           for(i=1;i<=10;i++){
+                console.log(` ${inputNumber} x ${i} = `,inputNumber * i);
+           }
+        }
+    </script>
+</body>
+</html>
